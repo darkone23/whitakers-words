@@ -1,5 +1,9 @@
 # Makefile for Whitaker's words
 
+# If you change the following, change them in whitakers-words.sh as well.
+DATA_DIR = /usr/share/whitakers-words
+BIN_DIR = /bin
+
 GPRBUILD                                := gprbuild
 GPRBUILD_OPTIONS                        := -j4
 
@@ -104,6 +108,13 @@ $(generated_sources): %: %.in Makefile
 
 test: all
 	cd test && ./run-tests.sh
+
+install:
+	install bin/words $(BIN_DIR)/whitakers_words_bin
+	install whitakers-words.sh $(BIN_DIR)/whitakers-words
+	mkdir -p $(DATA_DIR)
+	chmod ugo+rw $(DATA_DIR)
+	install ADDONS.LAT CHECKEWD. DICTFILE.GEN DICTLINE.GEN EWDSFILE.GEN EWDSLIST.GEN INDXFILE.GEN INFLECTS.LAT INFLECTS.SEC STEMFILE.GEN STEMLIST.GEN UNIQUES.LAT $(DATA_DIR)
 
 # This Makefile does not support parallelism (but gprbuild does).
 .NOTPARALLEL:

@@ -1,7 +1,7 @@
 WORDS
 =====
 
-This is a Latin parser and Latin-English dictionary, originally by William Whitaker (1936–2010).
+This is a Latin parser and Latin-English dictionary created by William Whitaker (1936–2010).
 It was originally cleaned up by Martin Keegan ([github](https://github.com/mk270/whitakers-words))
 and was available as a Debian package, but as time went on it started failing to compile on modern
 versions of GNAT, Keegan didn't respond to a pull request to fix the problem,
