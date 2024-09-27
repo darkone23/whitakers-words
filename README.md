@@ -23,6 +23,8 @@ Compiling and use on Debian-based systems
 Documentation
 =============
 
+[Wikipedia article](https://en.wikipedia.org/wiki/William_Whitaker%27s_Words)
+
 [Whitaker's original documentation](https://web.archive.org/web/20111105213921/http://users.erols.com/whitaker/wordsdoc.htm)
 
 [Martin Keegan's documentation](http://mk270.github.io/whitakers-words/)
