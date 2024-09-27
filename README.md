@@ -16,7 +16,9 @@ Compiling and use on Debian-based systems
 
     $ sudo apt-get install gprbuild gnat
     $ make
-    $ bin/words
+    $ sudo install
+    $ whitakers-words amat ... parses the verb and prints a dictionary definition
+    $ whitakers-words ... enters interactive mode
 
 Documentation
 =============
@@ -28,4 +30,17 @@ Documentation
 [Martin Keegan's web site](http://mk270.github.io/whitakers-words/operational.html)
 
 Also see the HOWTO.txt file.
+
+Ruby interface
+==============
+
+I made an interface for programs written in the ruby programming language.
+The code is in my project [Lemming](https://bitbucket.org/ben-crowell/lemming/src), in the module Lemming::Whitaker.
+It shells out to the binary program and communicates with it through pipes, as in an [Expect](https://en.wikipedia.org/wiki/Expect) interface.
+
+Python port
+===========
+
+There is a [python port](https://github.com/sjgallagher2/PyWORDS), but it
+doesn't implement 100% of the tricks and heuristics that the original did.
 
