@@ -2,7 +2,8 @@
 
 # If you change the following, change them in whitakers-words.sh as well.
 DATA_DIR = /usr/share/whitakers-words
-BIN_DIR = /bin
+SH_DIR = /bin
+BIN_DIR = /lib
 
 GPRBUILD                                := gprbuild
 GPRBUILD_OPTIONS                        := -j4
@@ -111,7 +112,7 @@ test: all
 
 install:
 	install bin/words $(BIN_DIR)/whitakers_words_bin
-	install whitakers-words.sh $(BIN_DIR)/whitakers-words
+	install whitakers-words.sh $(SH_DIR)/whitakers-words
 	mkdir -p $(DATA_DIR)
 	chmod ugo+rw $(DATA_DIR)
 	install ADDONS.LAT CHECKEWD. DICTFILE.GEN DICTLINE.GEN EWDSFILE.GEN EWDSLIST.GEN INDXFILE.GEN INFLECTS.LAT INFLECTS.SEC STEMFILE.GEN STEMLIST.GEN UNIQUES.LAT $(DATA_DIR)
