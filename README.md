@@ -1,30 +1,17 @@
-[Project Website](http://mk270.github.io/whitakers-words/)
-
 WORDS
 =====
 
-This is a cleaned-up version of the port of William Whitaker's WORDS
-programme, a Latin-English dictionary with inflectional morphology
-support; the original author passed away in 2010, so any and all help
-maintaining the software as development and execution environments evolve
-would be greatly appreciated.
+This is a Latin parser and Latin-English dictionary, originally by William Whitaker (1936–2010).
+It was originally cleaned up by Martin Keegan ([github](https://github.com/mk270/whitakers-words))
+and was available as a Debian package, but as time went on it started failing to compile on modern
+versions of GNAT, Keegan didn't respond to a pull request to fix the problem,
+and the package was dropped from Debian. This fork is meant to provide a version that will compile
+again and that can be installed on Linux.
 
-Effectively, this is an exercise in digital preservation.
-
-Contributing
-============
-
-Help is needed maintaining the code for future users; in particular, it
-does not currently support vowel length, so it may be necessary to gather
-a group of Latin experts to adjust its lexicon of several thousand words.
-
-If you contribute, please be sure to indicate your assent to redistributing
-your contributions under the same terms as the existing software; this
-will minimise copyright hassles in the future.
-
-Usage
+Compiling and use on Debian-based systems
 =====
 
+    $ sudo apt-get install gprbuild gnat
     $ make
     $ bin/words
 
@@ -33,20 +20,6 @@ Documentation
 
 See the HOWTO.txt file included, 
 and documentation on the [Project Website](http://mk270.github.io/whitakers-words/operational.html)
-
-
-Build-time Dependencies
-=======================
-
-* GPRBuild
-* gnat
-
-On a Debian-like system, you can install these roughly as follows:
-
-    $ apt-get install gprbuild gnat
-
-GNAT versions before 4.9 are believed to link against a buggy runtime on
-64-bit platforms, so should be avoided.
 
 Licensing
 =========
