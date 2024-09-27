@@ -41,6 +41,9 @@ It shells out to the binary program and communicates with it through pipes, as i
 Python port
 ===========
 
-There is a [python port](https://github.com/sjgallagher2/PyWORDS), but it
-doesn't implement 100% of the tricks and heuristics that the original did.
+There is a [python port](https://github.com/sjgallagher2/PyWORDS), which has
+evolved significantly away from the original. At first it didn't implement 100%
+of the tricks and heuristics that the original did, but now the author advertises
+it as a "more sophisticated implementation" than the original.
+
 
