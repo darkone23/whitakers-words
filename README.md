@@ -16,7 +16,7 @@ Compiling and use on Debian-based systems
 
     $ sudo apt-get install gprbuild gnat
     $ make
-    $ sudo install
+    $ sudo make install
     $ whitakers-words amat ... parses the verb and prints a dictionary definition
     $ whitakers-words ... enters interactive mode
 
