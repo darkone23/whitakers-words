@@ -48,4 +48,10 @@ evolved significantly away from the original. At first it didn't implement 100%
 of the tricks and heuristics that the original did, but now the author advertises
 it as a "more sophisticated implementation" than the original.
 
+Rust port
+=========
+
+There is a [rust port](https://github.com/cqb13/vocab-vault).
+
+
 
