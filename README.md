@@ -20,6 +20,8 @@ Compiling and use on Debian-based systems
     $ whitakers-words amat ... parses the verb and prints a dictionary definition
     $ whitakers-words ... enters interactive mode
 
+   note: currently not working on ARM systems
+
 Documentation
 =============
 
