@@ -5,8 +5,9 @@ abstract project Shared is
 
    package Compiler is
       for Switches ("Ada") use
-        (--  warnings
-         "-gnatwae", "-Wall",
+        (--  warnings; 'e' (treat-as-errors) dropped: newer GNAT's -gnatwk
+         --  hint fails the build (HOL-121)
+         "-gnatwa", "-Wall",
          "-fstack-check",
          --  Enable overflow checking in STRICT (-gnato1) mode (default)
          "-gnato",
@@ -22,8 +23,8 @@ abstract project Shared is
          "-g",
          -- Don't quit, write ali/tree file even if compile errors
          "-gnatQ",
-         -- Style
-         "-gnaty3aAbefhiklnOM80prtSux")
+         -- Style checks; 'x' (redundant parens) dropped: newer GNAT errors on it (HOL-121)
+         "-gnaty3aAbefhiklnOM80prtSu")
         --  Put user settings last so that they may override the
         --  default values.
         & Adaflags;
